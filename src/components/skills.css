@@ -1,0 +1,120 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 200vh;
+
+}
+.techsSkills{
+    height: 70vh;
+}
+
+.skillsContainer h1 {
+    height: 10vh;
+    /* margin: 3% 0%; */
+}
+
+.skillsContainer p {
+    color: #ABB2BF;
+}
+
+.iconTechs {
+    /* height: 37px;
+    margin: 2% 0%;
+    align-items: center;
+    justify-content: center; */
+/* TESTE //////////////////// */
+    display: flex;
+    height: 45px;
+    margin: 2% 0%;
+    align-items: center;
+    justify-content: center;
+}
+.iconTechs div{
+    width: 40px;
+    margin: 0% 1%;
+    
+}
+
+.iconTechs img {
+    height: 20px;
+    margin: 0% 1%;
+    transition-duration: 0.5s;
+    
+}
+
+.techsSkills:hover img {
+    height: 40px;
+}
+
+.iconTechs img:hover {
+    transition-duration: 0.2s;
+    border-radius: 20%;
+    box-shadow: 0px 0px 9px #b08effef;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 3px;
+}
+
+.techsSkills h2 {
+    margin-bottom: 3%;
+}
+
+
+
+/* softsContainer */
+.softs h2 {
+    font-size: 18px;
+}
+
+.softs p {
+    font-size: 14px;
+}
+.softs {
+    height: 40vh;
+}
+
+/* Skills 1 */
+.skills1 {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.charisma {
+    width: 28%;
+}
+
+.dedication {
+    width: 28%
+}
+
+/* Skills 2 */
+.skills2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.proactivity {
+    width: 28%;
+}
+
+/* imageContainer */
+
+.imageTechsContainer {
+    display: flex;
+    /* border: 3px solid blue; */
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageTechsContainer img {
+    height: 80%;
+    transition-duration: 1s;
+}
+
+.imageTechsContainer img:hover {
+    height: 90%;
+}
