@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 200vh;
+    /* height: 200vh; */
 
 }
 .techsSkills{
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .skillsContainer h1 {
@@ -71,7 +71,7 @@
     font-size: 14px;
 }
 .softs {
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 /* Skills 1 */
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
-}
+} 
 
 .proactivity {
     width: 28%;
@@ -105,9 +105,10 @@
 .imageTechsContainer {
     display: flex;
     /* border: 3px solid blue; */
-    height: 70vh;
+    height: 55vh;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .imageTechsContainer img {

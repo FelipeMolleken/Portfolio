@@ -34,7 +34,7 @@
     padding-top: 50px;
 }
 .arrowContainer img {
-    height: 60%;
+    height: 50%;
 }
 /* //////////////////////// */
 
@@ -59,19 +59,24 @@
     color: #ABB2BF;
 }
 .contactButton {
-    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0px;
+    /* width: 70%; */
+    width: 400px;
+
 }
 .contactButton button{
-    width: 185px;
+    width: 190px;
     border: 1px solid #996dffef;
     padding: 4px 15px;
-    border-radius: 2px;
+    border-radius: 3px;
     color: white;
     font-size: 18px;
     /* background-color: rgba(0, 0, 0, 0); */
-    background-color:#996dff21;
-    margin: 1px 1px;
-
+    background-color:#996dffac;
+    margin: 5px 0px;
     transition: all 0.3s ease;
     font-family: 'Fira Code', monospace;
 
@@ -81,11 +86,15 @@
     /* background-color:#996dff21; */
     background-color: rgba(0, 0, 0, 0);
     color: #996dffef;
-    padding: 5px 16px;
+    padding: 5px 15px;
     margin: 0px 0px;
 
     font-size: 19px;
-    box-shadow: 1px 1px 8px #b08effef;
+    box-shadow: 1px 1px 10px #b08effef;
+}
+#downloadBtn{
+    background-color: rgba(0, 0, 0, 0);
+    color: #996dfffd;
 }
 
 /* IMAGE //////////// */

@@ -1,41 +1,42 @@
 .aboutMeContainer {
-    height: 60vh;
-    /* border: 2px solid red; */
+    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     align-items: center; 
     margin-bottom: 30px;
-    /* font-family: 'Fira Code',monospace; */
 }
 .aboutMeContainer h1{
-    height: 10vh;
+    margin-bottom: 50px;
 }
 
 .presentationContainer{
-    height: 35vh;
+    /* height: 35vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid rgb(55, 186, 155); */
+    margin-bottom: 30px;
 } 
 .presentation {
     display: flex;
-    height: 25vh;
+    /* height: 25vh; */
     width: 80%;
+    /* border: 2px solid blue; */
 }
 .presentation img{
-    height: 100%;
+    /* height: 100%; */
+    height: 25vh;
 }
 .aboutMeText {
+
     margin-left: 40px;
     
     
 }
 
 .text{
-    /* height: 80%; */
-    /* width: 75% */
 }
 .aboutMeText p {
     margin-top: 20px;
@@ -52,14 +53,16 @@
     width: 100%;
     padding: 2% 5%;
     text-align: center;
-    font-size: 14px;   
+    font-size: 14px; 
+    margin-bottom: 30px;  
+    /* border: 2px solid red; */
     
 }
 .data div{
     transition-duration: 0.3s;
 }
 .data div:hover{
-    padding-bottom: 15px;
+    padding-bottom: 60px;
 }
 
 .data img{

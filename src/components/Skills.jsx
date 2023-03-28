@@ -18,8 +18,8 @@ function Skills() {
                     <div><img src="./icons/sass.png" alt="sass"></img></div>
                     <div><img src="./icons/git.png" alt="git"></img></div>
                     <div><img src="./icons/Github.png" alt="github"></img></div>
-                    <div><img src="./icons/bootstrap2 1.png" alt="bootstrap"></img></div>
-                    <div><img src="./icons/bulma1.png" alt="bulma"></img></div>
+                    <div><img src="./icons/bootstrap.png" alt="bootstrap"></img></div>
+                    <div><img src="./icons/bulma.png" alt="bulma"></img></div>
                     <div><img src="./icons/figma.png" alt="figma"></img></div>
                     
                 </div>

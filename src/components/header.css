@@ -38,9 +38,12 @@
     color: white;
     margin: 0px 20px;
     font-size: 13px;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
+#menu li a:hover{
+   color: #ABB2BF;
+}
+
 
 #buttons button{
     background-color: rgba(0, 0, 0, 0); 

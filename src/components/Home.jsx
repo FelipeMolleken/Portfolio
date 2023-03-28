@@ -12,8 +12,10 @@ function Home() {
                     <div className="subTitle">
                         <h4>Seeking your first job opportunity in the <br></br> technology field</h4>
                     </div>
-                    <div className="contactButton"><button>Contact me !!</button></div>
-                    <div className="contactButton"><button>Download CV</button></div>
+                    <div className="contactButton">
+                        <button>Contact me !!</button>
+                        <button id="downloadBtn">Download CV</button></div>
+                    {/* <div className="contactButton"><button>Download CV</button></div> */}
                 </div>
                 <div className="imageContainer">
                     <div className="image">
