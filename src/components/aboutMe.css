@@ -1,70 +1,62 @@
-.aboutMeContainer {
-    /* height: 60vh; */
+#aboutMeContainer {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin-bottom: 30px;
 }
-.aboutMeContainer h1{
+
+#aboutMeContainer h1 {
     margin-bottom: 50px;
 }
 
-.presentationContainer{
-    /* height: 35vh; */
+.presentationContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid rgb(55, 186, 155); */
     margin-bottom: 30px;
-} 
+}
+
 .presentation {
     display: flex;
-    /* height: 25vh; */
     width: 80%;
-    /* border: 2px solid blue; */
 }
-.presentation img{
-    /* height: 100%; */
+
+.presentation img {
     height: 25vh;
 }
+
 .aboutMeText {
-
     margin-left: 40px;
-    
-    
 }
 
-.text{
-}
 .aboutMeText p {
     margin-top: 20px;
-    /* font-size: auto; */
-    /* font-size: 18px; */
     color: #ABB2BF;
-
 }
-.data{
+
+/* informations list  */
+.personalData {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: 15vh;
     width: 100%;
     padding: 2% 5%;
     text-align: center;
-    font-size: 14px; 
-    margin-bottom: 30px;  
-    /* border: 2px solid red; */
-    
-}
-.data div{
-    transition-duration: 0.3s;
-}
-.data div:hover{
-    padding-bottom: 60px;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
-.data img{
+.personalData div {
+    transition-duration: 0.4s;
+}
+
+.personalData div:hover {
+    padding-bottom: 50px;
+}
+
+.personalData img {
     width: 30%;
 }

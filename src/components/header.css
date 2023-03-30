@@ -1,7 +1,7 @@
-.HeaderContainer {
+#headerContainer {
     display: flex;
     justify-content: space-between;
-    top:0;
+    top: 0;
     left: 0;
     height: 15vh;
     width: 100%;
@@ -9,50 +9,51 @@
     padding: 0px 40px 0px 40px;
     align-items: center;
     background-color: black;
-    background-image:  
 
-    radial-gradient(closest-corner circle at 95% 10%, #996dffac 0%, rgba(0, 0, 0, 0), 1000%, transparent),
-    radial-gradient(closest-corner circle at 2% 96%, #996dffac 0%, rgba(0, 0, 0, 0) 1000%);
+    /* ANIMATION ////////// */
+    background-image:
+        radial-gradient(closest-corner circle at 95% 10%, #996dffac 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+        radial-gradient(closest-corner circle at 2% 96%, #996dffac 0%, rgba(0, 0, 0, 0) 1000%);
     background-attachment: fixed;
-
     z-index: 9900;
-    /* teste */
     animation-name: bgAnimation;
     animation-duration: 2s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-#logo img{
-   height: 30px; 
-   
+
+#logo img {
+    height: 34px;
+    cursor: pointer;
 }
 
 #menu {
     display: flex;
     list-style: none;
-    /* margin: 0px 70px; */
-    /* margin: 0% 10%; */
     padding-right: 3%;
 }
-#menu li a{
+
+#menu li a {
     color: white;
     margin: 0px 20px;
-    font-size: 13px;
-    text-decoration: none;  
-}
-#menu li a:hover{
-   color: #ABB2BF;
-}
-
-
-#buttons button{
-    background-color: rgba(0, 0, 0, 0); 
-    border: none;
-    margin-left: 15px; 
+    font-size: 15px;
+    text-decoration: none;
     cursor: pointer;
 }
-#buttons button img{ 
-   width: 20px;
-   height: 20px;
-   color: white;
+
+#menu li a:hover {
+    color: #ABB2BF;
+}
+
+#buttons button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#buttons button img {
+    width: 25px;
+    /* height: 20px; */
+    color: white;
 }

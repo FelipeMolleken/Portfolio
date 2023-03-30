@@ -1,13 +1,9 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import './aboutMe.css'
 
-
 function AboutMe() {
-
     return (
-        <div className="aboutMeContainer">
+        <div id="aboutMeContainer">
             <div className="title">
                 <h1><span>A</span>bout me</h1>
             </div>
@@ -25,29 +21,27 @@ function AboutMe() {
                                 qualities they would be: dedicated, proactive and charismatic.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <div className="data">
+            <div id="skillsLink" className="personalData">
                 <div>
-                    <img src="./Point.png" alt="" />
+                    <img src="./point.png" alt="" />
                     <h4>Full Name</h4>
                     <p>Felipe Gois Molleken</p>
                 </div>
                 <div>
-                    <img src="./Point.png" alt="" />
+                    <img src="./point.png" alt="" />
                     <h4>Email address</h4>
                     <p>felipegois_m@hotmail.com</p>
                 </div>
                 <div>
-                    <img src="./Point.png" alt="" />
+                    <img src="./point.png" alt="" />
                     <h4>Github</h4>
                     <p>@felipemolleken</p>
-
                 </div>
                 <div>
-                    <img src="./Point.png" alt="" />
+                    <img src="./point.png" alt="" />
                     <h4>Phone</h4>
                     <p>(11)963724219</p>
                 </div>

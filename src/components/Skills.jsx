@@ -1,9 +1,9 @@
 import React from "react";
-import './skills.css' 
+import './skills.css'
 
 function Skills() {
     return (
-        <div className="skillsContainer">
+        <div id="skillsContainer">
             <div className="title">
                 <h1><span>S</span>kills</h1>
             </div>
@@ -20,8 +20,7 @@ function Skills() {
                     <div><img src="./icons/Github.png" alt="github"></img></div>
                     <div><img src="./icons/bootstrap.png" alt="bootstrap"></img></div>
                     <div><img src="./icons/bulma.png" alt="bulma"></img></div>
-                    <div><img src="./icons/figma.png" alt="figma"></img></div>
-                    
+                    <div><img src="./icons/Figma.png" alt="figma"></img></div>
                 </div>
                 <p>My soft skills:</p>
                 <div className="softs">
@@ -35,7 +34,6 @@ function Skills() {
                             <p>I like to show potential by delivering my best result, I always try to evolve and overcome myself, being very dedicated.</p>
                         </div>
                     </div>
-
                     <div className="skills2">
                         <div className="proactivity">
                             <h2>PROACTIVITY</h2>
@@ -43,11 +41,8 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-            <div className="imageTechsContainer">
+            <div id="projectsLink" className="imageTechsContainer">
                 <img src="./Skills (2).png" alt="" />
             </div>
         </div>

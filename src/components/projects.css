@@ -1,12 +1,11 @@
-.projectsContainer {
+#projectsContainer {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 60px;
-
 }
 
-.projectsContainer h1 {
+#projectsContainer h1 {
     margin-bottom: 50px;
 }
 
@@ -22,6 +21,7 @@
     margin: 6px 8px;
     border-radius: 2px;
 }
+
 .bottom div {
     height: 40vh;
     width: 25vh;
@@ -34,10 +34,3 @@
     display: flex;
     justify-content: center;
 }
-/* .project {
-    height: 40vh;
-    width: 25vh;
-    background-color: rgba(240, 255, 255, 0.221);
-    margin: 6px 8px;
-    border-radius: 2px;
-} */

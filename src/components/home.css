@@ -1,108 +1,103 @@
-
-.homeContainer{
+#homeContainer {
     display: flex;
     height: 65vh;
-    /* margin-top: 15vh; */
-    /* overflow: hidden; */
 }
-.textContainer{
-    /* overflow: hidden; */
+
+.textContainer {
     height: 100%;
     width: 50%;
     display: inline-block;
-    /* padding-top: 100px; */
     padding-top: 7%;
-    /* padding-left: 130px; */
     padding-left: 10%;
-    /* font-family: 'Fira Code',monospace; */
 }
-.imageContainer{
+
+.imageContainer {
     display: flex;
     height: 100%;
-    width: 50%;  
+    width: 50%;
     transition: all 0.8s ease;
 }
-.imageContainer:hover{
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
+
+.imageContainer:hover {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
 
 }
-.arrowContainer{
+
+.arrowContainer {
     display: flex;
     height: 20vh;
     justify-content: center;
     padding-top: 50px;
 }
+
 .arrowContainer img {
     height: 50%;
+    cursor: pointer;
 }
-/* //////////////////////// */
 
-.title{
+.title {
     transition: all 0.8s ease;
-    
 }
-.title span{
+
+.title span {
     color: #996dffef;
 }
-/* //////////// */
-.title:hover{
-    color:#996dffef;
+
+.title:hover {
+    color: #996dffef;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
 }
-
-
 
 .subTitle {
     margin: 15px 0px 15px 0px;
     color: #ABB2BF;
 }
+
 .contactButton {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 25px 0px;
-    /* width: 70%; */
     width: 400px;
-
 }
-.contactButton button{
+
+.contactButton button {
     width: 190px;
     border: 1px solid #996dffef;
     padding: 4px 15px;
     border-radius: 3px;
     color: white;
     font-size: 18px;
-    /* background-color: rgba(0, 0, 0, 0); */
-    background-color:#996dffac;
+    background-color: #996dffac;
     margin: 5px 0px;
     transition: all 0.3s ease;
     font-family: 'Fira Code', monospace;
-
 }
-.contactButton button:hover{
+
+.contactButton button:hover {
     cursor: pointer;
-    /* background-color:#996dff21; */
     background-color: rgba(0, 0, 0, 0);
     color: #996dffef;
     padding: 5px 15px;
     margin: 0px 0px;
-
     font-size: 19px;
     box-shadow: 1px 1px 10px #b08effef;
 }
-#downloadBtn{
+
+#downloadBtn {
     background-color: rgba(0, 0, 0, 0);
     color: #996dfffd;
 }
 
 /* IMAGE //////////// */
 
-.imageContainer{
+.imageContainer {
     display: flex;
 }
-.image img{
+
+.image img {
     width: 65%;
     margin-left: 20px;
 }
