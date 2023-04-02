@@ -4,13 +4,12 @@
     text-align: center;
 }
 
-
 #skillsContainer h1 {
     height: 10vh;
 }
 
 #skillsContainer p {
-    color: #ABB2BF;
+    color: var(--gray-color);
 }
 
 .iconTechs {
@@ -38,7 +37,7 @@
 .iconTechs img:hover {
     transition-duration: 0.2s;
     border-radius: 20%;
-    box-shadow: 0px 0px 9px #b08effef;
+    box-shadow: 0px 0px 9px var(--button-shadow);
     height: 40px;
     margin-bottom: 15px;
     padding: 3px;

@@ -2,9 +2,6 @@ import React from "react";
 import './footer.css'
 
 
-
-
-
 function Footer() {
     function scrollTop(){
         window.scrollTo({top:0,left: 0, behavior: "smooth"})

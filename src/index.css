@@ -2,14 +2,46 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
-body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+:root {
+  /* MAIN THEME */
+  --primary-color: white;
+  --gray-color: #ABB2BF;
+  --bg-color: black;
+  --purple-color: #996dffef;
+  --purple-button-and-bg: #996dffac;
+  --button-shadow: #b08effef;
+  --copyright-color: #7a4ae247;
+  --purple-button: #996dffac;
+  --color-text-button: white;
+  --download-btn-bg: rgba(0, 0, 0, 0);
+  --download-btn-color: white;
+
+  /* //////////////////////////// */
+
+  background-color: var(--bg-color);
+  color: var(--primary-color);
   margin: 0;
   font-family: 'Fira Code', monospace;
 }
+
+/* WHITE THEME */
+.white-mode:root {
+  --primary-color: rgb(0, 0, 0);
+  --gray-color: #242528;
+  --bg-color: rgb(255, 255, 255);
+  --purple-color: #6645f6;
+  --purple-button-and-bg: #6545f6cc;
+  --button-shadow:#6645f6;
+  --copyright-color: #6545f6cc;
+  --purple-button: #6645f6; 
+  --color-text-button: white;
+  --download-btn-bg: #6645f6; 
+  --download-btn-color: white;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

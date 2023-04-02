@@ -21,7 +21,6 @@
 .imageContainer:hover {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
-
 }
 
 .arrowContainer {
@@ -37,22 +36,23 @@
 }
 
 .title {
+    color: var(--primary-color);
     transition: all 0.8s ease;
 }
 
 .title span {
-    color: #996dffef;
+    color: var(--purple-color);
 }
 
 .title:hover {
-    color: #996dffef;
+    color: var(--purple-color);
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
 }
 
 .subTitle {
     margin: 15px 0px 15px 0px;
-    color: #ABB2BF;
+    color: var(--gray-color);
 }
 
 .contactButton {
@@ -65,12 +65,12 @@
 
 .contactButton button {
     width: 190px;
-    border: 1px solid #996dffef;
+    border: 1px solid var(--purple-color);
     padding: 4px 15px;
     border-radius: 3px;
-    color: white;
+    color: var(--color-text-button);
     font-size: 18px;
-    background-color: #996dffac;
+    background-color: var(--purple-button);
     margin: 5px 0px;
     transition: all 0.3s ease;
     font-family: 'Fira Code', monospace;
@@ -79,17 +79,19 @@
 .contactButton button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    color: #996dffef;
+    color: var(--purple-color);
     padding: 5px 15px;
     margin: 0px 0px;
     font-size: 19px;
-    box-shadow: 1px 1px 10px #b08effef;
+    box-shadow: 1px 1px 10px var(--button-shadow);
 }
 
 #downloadBtn {
-    background-color: rgba(0, 0, 0, 0);
-    color: #996dfffd;
+    background-color: var(--download-btn-bg);
+    color: var(--download-btn-color); 
 }
+
+
 
 /* IMAGE //////////// */
 

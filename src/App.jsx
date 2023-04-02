@@ -8,14 +8,6 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import './App.css';
 
-// const menuLinks = document.querySelectorAll('#menu a');
-
-// menuLinks.forEach((link) => {
-//   link.addEventListener("click", ()=> console.log("clicked"));
-// });
-  
-
-
 
 function App() {
   return (

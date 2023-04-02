@@ -8,7 +8,7 @@
     position: sticky;
     padding: 0px 40px 0px 40px;
     align-items: center;
-    background-color: black;
+    background-color: var(--bg-color);
 
     /* ANIMATION ////////// */
     background-image:
@@ -34,7 +34,7 @@
 }
 
 #menu li a {
-    color: white;
+    color: var(--primary-color);
     margin: 0px 20px;
     font-size: 15px;
     text-decoration: none;
@@ -42,7 +42,7 @@
 }
 
 #menu li a:hover {
-    color: #ABB2BF;
+    color: var(--gray-color);
 }
 
 #buttons button {
@@ -55,5 +55,17 @@
 #buttons button img {
     width: 25px;
     /* height: 20px; */
-    color: white;
+    color: var(--primary-color);
+}
+
+/* SWITCH THEME */
+#switchLabel{
+    display: inline-block;
+    cursor: pointer; 
+}
+#switchLabel input{
+    display: none;
+}
+#switchLabel img{
+    width: 24px;
 }

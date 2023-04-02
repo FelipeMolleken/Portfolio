@@ -16,7 +16,7 @@ function Home() {
                         <h4>Seeking your first job opportunity in the <br></br> technology field</h4>
                     </div>
                     <div className="contactButton">
-                        <button>Contact me !!</button>
+                        <button onClick={() => scroll('footerContainer')}>Contact me !!</button>
                         <button id="downloadBtn">Download CV</button>
                     </div>
                 </div>

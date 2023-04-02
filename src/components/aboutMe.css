@@ -33,7 +33,7 @@
 
 .aboutMeText p {
     margin-top: 20px;
-    color: #ABB2BF;
+    color: var(--gray-color);
 }
 
 /* informations list  */
@@ -59,4 +59,7 @@
 
 .personalData img {
     width: 30%;
+}
+.personalData p {
+    color: var(--gray-color);
 }
