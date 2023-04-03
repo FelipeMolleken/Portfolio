@@ -2,9 +2,11 @@ import React from "react";
 import './home.css'
 
 function Home() {
+    // scroll
     function scroll(ref) {
         document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
     }
+
     return (
         <div>
             <div id="homeContainer">
@@ -22,7 +24,7 @@ function Home() {
                 </div>
                 <div className="imageContainer">
                     <div className="image">
-                        <img src="./Group46.png"></img>
+                        <img src="./mainImage.png"></img>
                     </div>
                 </div>
             </div>

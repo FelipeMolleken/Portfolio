@@ -59,13 +59,15 @@
 }
 
 /* SWITCH THEME */
-#switchLabel{
+#switchLabel {
     display: inline-block;
-    cursor: pointer; 
+    cursor: pointer;
 }
-#switchLabel input{
+
+#switchLabel input {
     display: none;
 }
-#switchLabel img{
+
+#switchLabel img {
     width: 24px;
 }

@@ -43,7 +43,7 @@ function Skills() {
                 </div>
             </div>
             <div id="projectsLink" className="imageTechsContainer">
-                <img src="./Skills (2).png" alt="" />
+                <img src="./Skills.png" alt="" />
             </div>
         </div>
     )

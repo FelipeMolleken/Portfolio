@@ -7,18 +7,21 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import './App.css';
+import { ThemeProvider } from './Theme';
 
 
 function App() {
   return (
-      <div className='background'>
+    <div className='background'>
+      <ThemeProvider>
         <Header />
         <Home />
         <AboutMe />
         <Skills />
         <Projects />
         <Footer />
-      </div>
+      </ThemeProvider>
+    </div>
   );
 }
 

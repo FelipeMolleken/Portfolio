@@ -1,4 +1,3 @@
-
 /* Efeito de fundo  */
 
 .background {
@@ -9,7 +8,7 @@
     animation-name: bgAnimation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    animation-direction: alternate;
 }
 
 @keyframes bgAnimation {

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import './header.css'
-// import checkedImage from "./cheked.png"
-// import uncheckedImage from "./unchecked.png"
+import { Theme } from "../Theme";
+
 
 function Header() {
-    // functions to switch theme
-    const [isWhiteMode, setIsWhiteMode] = useState(false);
 
+    // functions to switch theme
+    const [isWhiteMode, setIsWhiteMode] = useContext(Theme)
     useEffect(() => {
         const htmlElement = document.querySelector('html');
         if (isWhiteMode) {
@@ -15,7 +15,6 @@ function Header() {
             htmlElement.classList.remove('white-mode');
         }
     }, [isWhiteMode]);
-
     function handleCheckboxChange() {
         setIsWhiteMode(!isWhiteMode);
     }
@@ -32,7 +31,7 @@ function Header() {
         <div id="headerContainer">
             <div id="logo">
                 <a onClick={() => scrollTop()}>
-                    <img src="./logofelipe2.png"></img>
+                    <img src={isWhiteMode ? "./logoBlack.png" : "./logoWhite.png"} alt="Checkbox" />
                 </a>
             </div>
             <ul id="menu">
@@ -44,7 +43,6 @@ function Header() {
             </ul>
 
             <div id="buttons">
-
                 <label id="switchLabel" onChange={handleCheckboxChange}>
                     <input type="checkbox" checked={isWhiteMode} />
                     <img src={isWhiteMode ? "./moonIcon.png" : "./sunIcon.png"} alt="Checkbox" />
@@ -55,6 +53,5 @@ function Header() {
         </div>
     )
 }
-
 
 export default Header;
