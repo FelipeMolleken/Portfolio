@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import './aboutMe.css'
 
+import { LanguageContext } from "../Language";
+
 function AboutMe() {
+    const [data, setData] = useContext(LanguageContext)
     return (
         <div id="aboutMeContainer">
             <div className="title">
-                <h1><span>A</span>bout me</h1>
+                <h1><span>{data.aboutmetitle1}</span>{data.aboutmetitle2}</h1>
             </div>
             <div className="presentationContainer">
                 <div className="presentation">
@@ -15,10 +18,12 @@ function AboutMe() {
                     <div className="aboutMeText">
                         <h2>Felipe Gois Molleken</h2>
                         <div className="text">
-                            <p>Hello, I'm an enthusiast in the field of front-end development.<br></br>
-                                Daily I'm improving my skills to get my first opportunity as a React<br></br> Developer.<br></br>
-                                I'm in my last year of business school. If I could point out my main<br></br>
-                                qualities they would be: dedicated, proactive and charismatic.
+                            <p>
+                                {data.aboutmeText1}<br></br>
+                                {data.aboutmeText2}<br></br>
+                                {data.aboutmeText3}<br></br>
+                                {data.aboutmeText4}<br></br>
+                                {data.aboutmeText5}
                             </p>
                         </div>
                     </div>
@@ -27,12 +32,12 @@ function AboutMe() {
             <div id="skillsLink" className="personalData">
                 <div>
                     <img src="./point.png" alt="" />
-                    <h4>Full Name</h4>
+                    <h4>{data.aboutmeDataName}</h4>
                     <p>Felipe Gois Molleken</p>
                 </div>
                 <div>
                     <img src="./point.png" alt="" />
-                    <h4>Email address</h4>
+                    <h4>{data.aboutmeDataEmail}</h4>
                     <p>felipegois_m@hotmail.com</p>
                 </div>
                 <div>
@@ -42,7 +47,7 @@ function AboutMe() {
                 </div>
                 <div>
                     <img src="./point.png" alt="" />
-                    <h4>Phone</h4>
+                    <h4>{data.aboutmeDataPhone}</h4>
                     <p>(11)963724219</p>
                 </div>
             </div>

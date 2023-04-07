@@ -18,6 +18,7 @@
   --color-text-button: white;
   --download-btn-bg: rgba(0, 0, 0, 0);
   --download-btn-color: white;
+  --hover-color: #ABB2BF;
 
   /* //////////////////////////// */
 
@@ -33,13 +34,14 @@
   --gray-color: #242528;
   --bg-color: rgb(255, 255, 255);
   --purple-color: #6645f6;
-  --purple-button-and-bg: #6545f6cc;
+  --purple-button-and-bg: #6545f663;
   --button-shadow: #6645f6;
   --copyright-color: #5934fccc;
   --purple-button: #6645f6;
   --color-text-button: white;
   --download-btn-bg: #6645f6;
   --download-btn-color: white;
+  --hover-color: #6645f6;
 }
 
 code {

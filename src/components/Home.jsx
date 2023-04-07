@@ -1,24 +1,31 @@
-import React from "react";
+import React, {useContext} from "react";
 import './home.css'
 
+import { LanguageContext } from "../Language";
+
+
+
 function Home() {
+
+    const [data, setData] = useContext(LanguageContext)
     // scroll
     function scroll(ref) {
         document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
     }
-
     return (
         <div>
             <div id="homeContainer">
                 <div className="textContainer ">
                     <div className="title">
-                        <h1>Felipe is a <span>front-end<br></br> developer</span> and <span>business <br></br>student</span></h1>
+                        <h1>{data.homeTitle1}<span>{data.homeTitle2}<br>
+                        </br>{data.homeTitle3}</span>{data.homeTitle4}<span>{data.homeTitle5}<br>
+                        </br>{data.homeTitle6}</span></h1>
                     </div>
                     <div className="subTitle">
-                        <h4>Seeking your first job opportunity in the <br></br> technology field</h4>
+                        <h4>{data.homeSubtitle1}<br></br>{data.homeSubtitle2}</h4>
                     </div>
                     <div className="contactButton">
-                        <button onClick={() => scroll('footerContainer')}>Contact me !!</button>
+                        <button onClick={() => scroll('footerContainer')}>{data.homebutton1}</button>
                         <button id="downloadBtn">Download CV</button>
                     </div>
                 </div>

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import './projects.css'
+import { LanguageContext } from "../Language";
 
 function Projects() {
+    const [data, setData] = useContext(LanguageContext)
     return (
         <div id="projectsContainer">
             <div className="title">
-                <h1><span>P</span>rojects</h1>
+                <h1><span>{data.ProjectsTitle1}</span>{data.ProjectsTitle2}</h1>
             </div>
             <div className="projectsMenu">
                 <div className="top">

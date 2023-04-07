@@ -36,6 +36,10 @@
     color: var(--gray-color);
 }
 
+.text p{
+    width: 680px;
+}
+
 /* informations list  */
 .personalData {
     display: flex;

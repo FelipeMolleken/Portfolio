@@ -1,0 +1,47 @@
+{
+  "headertitle": "Início",
+  "headerAboutme": "Sobre mim",
+  "headerSkills": "Habilidades",
+  "headerProjects": "Projetos",
+  "headerContact": "Contato",
+  "homeTitle1": "Felipe é um ",
+  "homeTitle2": "desenvolvedor",
+  "homeTitle3": "front-end",
+  "homeTitle4": " e um ",
+  "homeTitle5": "estudante  ",
+  "homeTitle6": "de administração",
+  "homeSubtitle1": "Buscando minha primeira oportunidade de",
+  "homeSubtitle2": "emprego na área da tecnologia",
+  "homebutton1": "Fale comigo !",
+  "homebutton2": "de administração",
+  "aboutmetitle1": "S",
+  "aboutmetitle2": "obre mim",
+  "aboutmeText1": "Olá, sou um entusiasta na área de desenvolvimento front-end.",
+  "aboutmeText2": "Diariamente estou aprimorando minhas habilidades para conseguir minha primeira oportunidade como Desenvolvedor React.",
+  "aboutmeText3": "Estou no meu ultimo ano de faculade de administração. Se eu pudesse apontar minhas principais qualidades seriam:",
+  "aboutmeText4": " dedicado, proativo e carismatico.",
+  "aboutmeDataName": "Nome completo",
+  "aboutmeDataEmail": "Endereço de email",
+  "aboutmeDataPhone": "Celular",
+  "SkillsTitle1": "H",
+  "SkillsTitle2": "abilidades",
+  "SkillsSubtitle":"Tecnologias e habilidades pessoais",
+  "SkillsTechs":"Minhas tecnologias:",
+  "SkillsSoftskills":"Minhas habilidades pessoais:",
+  "SkillsCharismaTitle":"CARISMA",
+  "SkillsCharismaText":"Sou muito gentil e atencioso, o que impacta positivamente no meu ambiente de trabalho, a comunicação e a relação com a equipe é mais eficiente, trazendo um ambiente e uma convivência mais agradável.",
+  "SkillsDedicationTitle":"DEDICAÇÃO",
+  "SkillsDedicationText":"Gosto de mostrar potencial entregando meu melhor resultado, procuro me dedicar a sempre evoluir e me superar.",
+  "SkillsProactivityTitle":"PROATIVIDADE",
+  "SkillsProactivityText":"Procuro resolver todos os problemas que me rodeiam, sempre buscando formas mais eficazes de simplificar tarefas, processos e trabalhos que me são passados.",
+  "ProjectsTitle1":"P",
+  "ProjectsTitle2":"rojetos",
+  "FooterArrow":"VOLTAR AO TOPO",
+  "FooterText":"Desenvolvedor Front-end nativo do Brasil",
+  "FooterContact":"Contato"
+
+
+
+
+
+}

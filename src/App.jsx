@@ -9,18 +9,22 @@ import Footer from './components/Footer';
 import './App.css';
 import { ThemeProvider } from './Theme';
 
+import { LanguageProvider } from './Language'
+
 
 function App() {
   return (
     <div className='background'>
-      <ThemeProvider>
-        <Header />
-        <Home />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Footer />
-      </ThemeProvider>
+      <LanguageProvider>
+        <ThemeProvider>
+          <Header />
+          <Home />
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Footer />
+        </ThemeProvider>
+      </LanguageProvider>
     </div>
   );
 }

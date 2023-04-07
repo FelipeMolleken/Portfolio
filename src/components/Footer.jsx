@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import './footer.css'
 import { Theme } from "../Theme";
-
+import { LanguageContext } from "../Language";
 
 function Footer(props) {
 
     const [isWhiteMode, setIsWhiteMode] = useContext(Theme)
+    const [data, setData] = useContext(LanguageContext)
     // scroll
     function scrollTop() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
@@ -14,15 +15,15 @@ function Footer(props) {
     return (
         <div id="footerContainer">
             <div id="arrowFooter">
-                <a onClick={() => scrollTop()}><img src={isWhiteMode ? "./arrowUpBlack.png" : "./arrowUpWhite.png"} alt="Checkbox" /><p><b>BACK TO TOP</b></p></a>
+                <a onClick={() => scrollTop()}><img src={isWhiteMode ? "./arrowUpBlack.png" : "./arrowUpWhite.png"} alt="Checkbox" /><p><b>{data.FooterArrow}</b></p></a>
             </div>
             <div id="informations">
                 <div id="name">
                     <h4><img src={isWhiteMode ? "./footerIconBlack.png" : "./footerIconWhite.png"} alt="" /> @FelipeMolleken</h4>
-                    <p>Front-end developer based in Brazil</p>
+                    <p>{data.FooterText}</p>
                 </div>
                 <div id="contact">
-                    <h2>Contact</h2>
+                    <h2>{data.FooterContact}</h2>
                     <ul>
                         <li><img src={isWhiteMode ? "./phoneBlack.png" : "./phoneWhite.png"} alt="" />(11)96372-4219</li>
                         <li><img src={isWhiteMode ? "./emailBlack.png" : "./emailWhite.png"} alt="" />felipegois_m@hotmail.com</li>
