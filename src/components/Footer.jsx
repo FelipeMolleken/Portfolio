@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import './footer.css'
-import { Theme } from "../Theme";
-import { LanguageContext } from "../Language";
+import './Styles/footer.css'
+import { Theme } from "../Contexts/Theme";
+import { LanguageContext } from "../Contexts/Language";
 
 function Footer(props) {
 

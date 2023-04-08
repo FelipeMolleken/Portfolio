@@ -4,6 +4,7 @@
   "headerSkills": "Habilidades",
   "headerProjects": "Projetos",
   "headerContact": "Contato",
+  "mainImg":"mainImagePT.png",
   "homeTitle1": "Felipe é um ",
   "homeTitle2": "desenvolvedor",
   "homeTitle3": "front-end",
@@ -39,9 +40,5 @@
   "FooterArrow":"VOLTAR AO TOPO",
   "FooterText":"Desenvolvedor Front-end nativo do Brasil",
   "FooterContact":"Contato"
-
-
-
-
 
 }

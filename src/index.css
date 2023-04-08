@@ -2,10 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 :root {
+
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: 'Fira Code', monospace;
+
   /* MAIN THEME */
   --primary-color: white;
   --gray-color: #ABB2BF;
@@ -19,13 +23,6 @@
   --download-btn-bg: rgba(0, 0, 0, 0);
   --download-btn-color: white;
   --hover-color: #ABB2BF;
-
-  /* //////////////////////////// */
-
-  background-color: var(--bg-color);
-  color: var(--primary-color);
-  margin: 0;
-  font-family: 'Fira Code', monospace;
 }
 
 /* WHITE THEME */
@@ -47,4 +44,84 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* BACKGROUND EFFECT */
+.background {
+  background-image:
+    radial-gradient(closest-corner circle at 95% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+    radial-gradient(closest-corner circle at 2% 96%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  background-attachment: fixed;
+  animation-name: bgAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-image:
+      radial-gradient(closest-corner circle at 95% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  10% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.90% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  20% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.80% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.20%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  30% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.70% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.30%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  40% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.60% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.40%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  50% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.50% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.50%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  60% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.40% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.60%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  70% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.30% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.70%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  80% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.20% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.80%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  90% {
+    background-image:
+      radial-gradient(closest-corner circle at 94.10% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 96.90%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
+
+  100% {
+    background-image:
+      radial-gradient(closest-corner circle at 94% 10%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0), 1000%, transparent),
+      radial-gradient(closest-corner circle at 2% 97%, var(--purple-button-and-bg) 0%, rgba(0, 0, 0, 0) 1000%);
+  }
 }

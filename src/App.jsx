@@ -6,11 +6,8 @@ import AboutMe from './components/Aboutme';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import './App.css';
-import { ThemeProvider } from './Theme';
-
-import { LanguageProvider } from './Language'
-
+import { ThemeProvider } from './Contexts/Theme';
+import { LanguageProvider } from './Contexts/Language'
 
 function App() {
   return (
@@ -28,6 +25,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

@@ -1,5 +1,6 @@
 import React, { useState, createContext } from "react";
-import dataEN from './components/en.json';
+// import dataEN from './components/en.json';
+import dataEN from '../JsonLanguage/en.json';
 
 export const LanguageContext = createContext();
 

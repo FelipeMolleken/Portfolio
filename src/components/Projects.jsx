@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import './projects.css'
-import { LanguageContext } from "../Language";
+import './Styles/projects.css'
+import { LanguageContext } from "../Contexts/Language";
 
 function Projects() {
     const [data, setData] = useContext(LanguageContext)

@@ -1,13 +1,14 @@
 import React, {useContext} from "react";
-import './home.css'
-
-import { LanguageContext } from "../Language";
+import './Styles/home.css'
+import { Theme } from "../Contexts/Theme";
+import { LanguageContext } from "../Contexts/Language";
 
 
 
 function Home() {
 
     const [data, setData] = useContext(LanguageContext)
+    const [isWhiteMode, setIsWhiteMode] = useContext(Theme)
     // scroll
     function scroll(ref) {
         document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
@@ -31,12 +32,12 @@ function Home() {
                 </div>
                 <div className="imageContainer">
                     <div className="image">
-                        <img src="./mainImage.png"></img>
+                        <img src={data.mainImg}></img>
                     </div>
                 </div>
             </div>
             <div id="aboutMeLink" className="arrowContainer">
-                <a onClick={() => scroll('aboutMeLink')}><img src="./arrowDown.gif"></img></a>
+                <a onClick={() => scroll('aboutMeLink')}><img src={isWhiteMode ? "./ArrowDownBlack.png": "./arrowDown.gif"}></img></a>
             </div>
         </div>
     );

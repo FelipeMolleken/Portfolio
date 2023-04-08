@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext } from "react";
-import './header.css'
+import './Styles/header.css'
 
-import { Theme } from "../Theme";
-import { LanguageContext } from "../Language";
+import { Theme } from "../Contexts/Theme";
+import { LanguageContext } from "../Contexts/Language";
 
-import dataPT from './pt.json';
-import dataEN from './en.json';
+import dataPT from '../JsonLanguage/pt.json';
+import dataEN from '../JsonLanguage/en.json';
 
 
 function Header() {

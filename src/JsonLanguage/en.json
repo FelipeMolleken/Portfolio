@@ -4,6 +4,7 @@
   "headerSkills": "Skills",
   "headerProjects": "Projects",
   "headerContact": "Contact",
+  "mainImg":"mainImage.png",
   "homeTitle1": "Felipe is a ",
   "homeTitle2": "front-end",
   "homeTitle3": "developer",
@@ -39,4 +40,6 @@
   "FooterArrow":"BACK TO TOP",
   "FooterText":"Front-end developer native to Brazil",
   "FooterContact":"Contact"
+
+  
 }
