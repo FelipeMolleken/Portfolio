@@ -12,24 +12,18 @@ function Projects() {
             <div className="projectsMenu">
                 <div className="top">
                     <div className="project">
-
                     </div>
                     <div className="project">
-
                     </div>
                     <div className="project">
-
                     </div>
                 </div>
                 <div className="bottom">
                     <div className="project">
-
                     </div>
                     <div className="project">
-
                     </div>
                     <div className="project">
-
                     </div>
                 </div>
             </div>

@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import './Styles/aboutMe.css'
-
-// import { LanguageContext } from "../Language";
 import { LanguageContext } from "../Contexts/Language";
 
 function AboutMe() {
@@ -19,11 +17,18 @@ function AboutMe() {
                     <div className="aboutMeText">
                         <h2>Felipe Gois Molleken</h2>
                         <div className="text">
-                            <p>
+                            {/* <p>
                                 {data.aboutmeText1}<br></br>
                                 {data.aboutmeText2}<br></br>
                                 {data.aboutmeText3}<br></br>
                                 {data.aboutmeText4}<br></br>
+                                {data.aboutmeText5}
+                            </p> */}
+                            <p>
+                                {data.aboutmeText1}
+                                {data.aboutmeText2}
+                                {data.aboutmeText3}
+                                {data.aboutmeText4}
                                 {data.aboutmeText5}
                             </p>
                         </div>

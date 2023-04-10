@@ -6,7 +6,7 @@
     height: 15vh;
     width: 100%;
     position: sticky;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px;
     align-items: center;
     background-color: var(--bg-color);
 
@@ -54,8 +54,12 @@
 
 #buttons button img {
     width: 30px;
-    /* height: 20px; */
     color: var(--primary-color);
+}
+
+#btn-mobile {
+    display: none;
+  
 }
 
 /* SWITCH THEME */
@@ -70,4 +74,110 @@
 
 #switchLabel img {
     width: 30px;
+}
+
+@media screen and (max-width:1200px) {
+    #menu li a {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    #menu li a {
+        font-size: 12px;
+        margin: 0px 17px;
+    }
+
+    #logo img {
+        height: 30px;
+    }
+
+    #buttons button img {
+        width: 26px;
+    }
+
+    #switchLabel img {
+        width: 26px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    #headerContainer {
+        height: 10vh;
+        padding: 0px 25px;
+    }
+
+    #menu li a {
+        font-size: 11px;
+        margin: 0px 11px;
+    }
+
+    #logo img {
+        height: 24px;
+    }
+
+    #buttons button img {
+        width: 22px;
+    }
+
+    #switchLabel img {
+        width: 22px;
+    }
+
+    #btn-mobile {
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width:630px) {
+    #btn-mobile {
+        /* display: block; */
+        display:inline;
+
+        /* width: 30px; */
+        
+        
+    }
+
+    #menu {
+        background-color: var(--bg-color);        
+        background-image:
+            radial-gradient(closest-corner circle at 95% 10%, #996dffac 0%, rgb(0, 0, 0), 1000%, transparent),
+            radial-gradient(closest-corner circle at 2% 96%, #996dffac 0%, rgba(253, 5, 5, 0) 1000%);
+        background-attachment: fixed;
+        z-index: 9900;
+        animation-name: bgAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        /* ///////////////////////// */
+        display: block;
+        /* display: block; */
+        position: absolute;
+        width: 100%;
+        top: 10vh;
+        left: 0;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+    #menu.active {
+        visibility: visible;
+        height: 90vh;
+    }
+    #menu li a {
+        font-size: 20px;
+    }
+    #menu li{
+        margin: 25px;
+        padding: 7px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 9px var(--button-shadow);
+    }
+
+
 }

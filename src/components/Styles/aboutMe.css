@@ -29,15 +29,13 @@
 
 .aboutMeText {
     margin-left: 40px;
+    width: 50%;
+
 }
 
 .aboutMeText p {
     margin-top: 20px;
     color: var(--gray-color);
-}
-
-.text p{
-    width: 680px;
 }
 
 /* informations list  */
@@ -67,4 +65,55 @@
 
 .personalData p {
     color: var(--gray-color);
+}
+
+@media screen and (max-width:1200px) {
+    .aboutMeText h2 {
+        font-size: 21px;
+    }
+
+    .aboutMeText {
+        width: 70%;
+    }
+
+    .aboutMeText p {
+        font-size: 15px;
+    }
+
+    .presentation img {
+        height: 22vh;
+    }
+}
+
+@media screen and (max-width:980px){
+    .personalData img {
+        width: 22%;
+    }
+    .personalData{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:820px){
+    .aboutMeText h2 {
+        font-size: 18px;
+    }
+    .aboutMeText p {
+        font-size: 13px;
+    }
+    .personalData{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width:630px){
+
+}
+
+@media screen and (max-width:480px){
+
+
+}
+
+@media screen and (min-width:280px){
+
 }

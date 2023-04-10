@@ -46,6 +46,26 @@ code {
     monospace;
 }
 
+
+
+/* TITLE EFFECT AND STYLE */
+.title {
+  color: var(--primary-color);
+  transition: all 0.8s ease;
+  font-size: 19px;
+}
+
+.title span {
+  color: var(--purple-color);
+}
+
+.title:hover {
+  color: var(--purple-color);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+
 /* BACKGROUND EFFECT */
 .background {
   background-image:
@@ -57,6 +77,26 @@ code {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+/* RESPONSIVIDADE */
+@media screen and (max-width:1200px){
+  .title{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:980px){
+  .title{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:820px){
+  .title{
+    font-size: 11px;
+  }
+}
+
+
+
 
 @keyframes bgAnimation {
   0% {

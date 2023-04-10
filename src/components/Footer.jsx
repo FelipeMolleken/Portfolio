@@ -7,7 +7,8 @@ function Footer(props) {
 
     const [isWhiteMode, setIsWhiteMode] = useContext(Theme)
     const [data, setData] = useContext(LanguageContext)
-    // scroll
+
+    // FUNCTION SCROLL
     function scrollTop() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
     }
@@ -41,4 +42,5 @@ function Footer(props) {
         </div>
     );
 }
+
 export default Footer;

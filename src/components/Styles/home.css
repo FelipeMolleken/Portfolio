@@ -4,18 +4,29 @@
 }
 
 .textContainer {
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 50%;
-    display: inline-block;
-    padding-top: 7%;
-    padding-left: 10%;
+    align-items: center;
+    padding-bottom: 30px;
 }
+
 
 .imageContainer {
     display: flex;
-    height: 100%;
     width: 50%;
     transition: all 0.8s ease;
+    /* border: 2px solid red; */
+}
+.image{
+    /* border: 2px solid blue; */
+    width: 66%;
+}
+
+.image img {
+    height: 90%;
+
 }
 
 .imageContainer:hover {
@@ -35,43 +46,28 @@
     cursor: pointer;
 }
 
-.title {
-    color: var(--primary-color);
-    transition: all 0.8s ease;
-}
-
-.title span {
-    color: var(--purple-color);
-}
-
-.title:hover {
-    color: var(--purple-color);
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-}
 
 .subTitle {
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px;
     color: var(--gray-color);
+    font-size: 18px;
 }
 
 .contactButton {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 25px 0px;
-    width: 400px;
+    margin-right: 50px;
+    height: 40px;
 }
 
 .contactButton button {
-    width: 190px;
+    height: 38px;
+    padding: 5px 30px;
+    font-size: 20px;
     border: 1px solid var(--purple-color);
-    padding: 4px 15px;
     border-radius: 3px;
     color: var(--color-text-button);
-    font-size: 18px;
     background-color: var(--purple-button);
-    margin: 5px 0px;
     transition: all 0.3s ease;
     font-family: 'Fira Code', monospace;
 }
@@ -80,9 +76,7 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     color: var(--purple-color);
-    padding: 5px 15px;
-    margin: 0px 0px;
-    font-size: 19px;
+    font-size: 21px;
     box-shadow: 1px 1px 10px var(--button-shadow);
 }
 
@@ -91,15 +85,63 @@
     color: var(--download-btn-color);
 }
 
+@media screen and (max-width:1200px){
+    .image img {
+        height: 80%;
+    }
+    .subTitle {
+        font-size: 15px;  
+    }
+    .contactButton {
+        margin-right: 20px;
+    }
+    .contactButton button{
+        height: 38px;
+        padding: 5px 30px;
+        font-size: 16px;
+    }
+    .contactButton button:hover {
+        font-size: 17px;
+    }
 
-
-/* IMAGE //////////// */
-
-.imageContainer {
-    display: flex;
 }
 
-.image img {
-    width: 65%;
-    margin-left: 20px;
+
+@media screen and (max-width:980px){
+    .image img {
+        height: 70%;
+    }
+    .subTitle {
+        font-size: 13px;  
+    }
+    .contactButton button{
+        height: 38px;
+        padding: 5px 23px;
+        font-size: 13px;
+    }
+    .contactButton button:hover {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width:820px){
+
+    #homeContainer {
+        height: 40vh;
+    }
+
+    .image img {
+        height: 72%;
+    }
+    .arrowContainer {
+        padding-top: 10px;
+    }
+    .subTitle {
+        font-size: 12px;  
+    }
+    .arrowContainer img {
+        height: 30%;
+        cursor: pointer;
+    }
+
 }

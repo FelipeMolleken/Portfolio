@@ -34,3 +34,26 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:1200px) {
+    .top div {
+        height: 36vh;
+        width: 21vh;
+    }
+    .bottom div{
+        height: 36vh;
+        width: 21vh;
+    }
+
+}
+@media screen and (max-width:820px){
+    .top div {
+        height: 30vh;
+        width: 15vh;
+    }
+    .bottom div{
+        height: 30vh;
+        width: 15vh;
+    }
+
+}
