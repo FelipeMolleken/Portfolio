@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import './Styles/header.css'
-
 import { Theme } from "../Contexts/Theme";
 import { LanguageContext } from "../Contexts/Language";
-
 import dataPT from '../JsonLanguage/pt.json';
 import dataEN from '../JsonLanguage/en.json';
 
 function Header() {
 
-    // FUNCTION SWITCH THEME
+    // FUNCTION SWITCH THEME/////////////////////////////////////////////////////////////
+
     const [isWhiteMode, setIsWhiteMode] = useContext(Theme)
     useEffect(() => {
         const htmlElement = document.querySelector('html');
@@ -23,7 +22,8 @@ function Header() {
         setIsWhiteMode(!isWhiteMode);
     }
 
-    // FUNCTION SCROLL
+    // FUNCTION SCROLL/////////////////////////////////////////////////////////////
+
     function scroll(ref) {
         document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
     }
@@ -31,7 +31,8 @@ function Header() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
     }
 
-    // //////////SWITCH LANGUAGE//////////// 
+    // SWITCH LANGUAGE/////////////////////////////////////////////////////////////
+
     const [data, setData] = useContext(LanguageContext)
     const [language, setLanguage] = useState('en');
     const handleLanguageChange = () => {
@@ -44,14 +45,17 @@ function Header() {
         }
     }
 
-    // ////////MENU MOBILE/////////
+    // MENU MOBILE/////////////////////////////////////////////////////////////
 
     const [menuIsActive, setMenuIsActive] = useState(false);
     const menuRef = useRef(null)
 
-    function toggleMenu() {
-        setMenuIsActive(!menuIsActive)
-    }
+    function toggleMenu(event) {
+        if (event.type === "TouchStart") event.preventDefault()
+        event.currentTarget.setAttribute('aria-expanded', !menuIsActive)
+        setMenuIsActive(!menuIsActive)}
+        
+    ;
 
 
     return (
@@ -61,7 +65,7 @@ function Header() {
                     <img src={isWhiteMode ? "./logoBlack.png" : "./logoWhite.png"} alt="Checkbox" />
                 </a>
             </div>
-            {/* <nav id="navFora" > */}
+ 
                 <nav id="menu" className={menuIsActive ? "active" : ""} ref={menuRef}>
                     <li><a onClick={() => scrollTop()}>{data.headertitle}</a></li>
                     <li><a onClick={() => scroll('aboutMeLink')}>{data.headerAboutme}</a></li>
@@ -76,9 +80,10 @@ function Header() {
                     </label>
                     <button onClick={handleLanguageChange}><img src={language === 'en' ? "./br.png" : "./eua.png"}></img></button>
 
-                    <button id="btn-mobile" onClick={toggleMenu}><img src={isWhiteMode ? "./hamburguerBlack.png" : "./hamburguerWhite.png"} alt="" /></button>
+                    <button id="btn-mobile" touchStart={toggleMenu} onClick={toggleMenu} aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src={isWhiteMode ? "./hamburguerBlack.png" : "./hamburguerWhite.png"} alt="" /></button>
+
                 </div>
-            {/* </nav> */}
+
         </header>
     )
 }

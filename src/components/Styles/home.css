@@ -19,7 +19,8 @@
     transition: all 0.8s ease;
     /* border: 2px solid red; */
 }
-.image{
+
+.image {
     /* border: 2px solid blue; */
     width: 66%;
 }
@@ -85,46 +86,52 @@
     color: var(--download-btn-color);
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
     .image img {
         height: 80%;
     }
+
     .subTitle {
-        font-size: 15px;  
+        font-size: 15px;
     }
+
     .contactButton {
         margin-right: 20px;
     }
-    .contactButton button{
+
+    .contactButton button {
         height: 38px;
         padding: 5px 30px;
         font-size: 16px;
     }
+
     .contactButton button:hover {
         font-size: 17px;
     }
-
 }
 
-
-@media screen and (max-width:980px){
+@media screen and (max-width:980px) {
     .image img {
         height: 70%;
     }
+
     .subTitle {
-        font-size: 13px;  
+        font-size: 13px;
     }
-    .contactButton button{
+
+    .contactButton button {
         height: 38px;
         padding: 5px 23px;
         font-size: 13px;
     }
+
     .contactButton button:hover {
         font-size: 14px;
     }
 
 }
-@media screen and (max-width:820px){
+
+@media screen and (max-width:820px) {
 
     #homeContainer {
         height: 40vh;
@@ -133,15 +140,79 @@
     .image img {
         height: 72%;
     }
+
     .arrowContainer {
         padding-top: 10px;
     }
+
     .subTitle {
-        font-size: 12px;  
+        font-size: 12px;
     }
+
     .arrowContainer img {
         height: 30%;
         cursor: pointer;
     }
+}
 
+@media screen and (max-width:630px) {
+    #homeContainer {
+        /* height: 55vh; */
+        height: auto;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textContainer {
+        width: 88%;
+        padding: 0px;
+        margin: 0px;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .subTitle {
+        font-size: 10px;
+    }
+
+    .contactButton button {
+        height: 30px;
+        padding: 3px 18px;
+        font-size: 10px;
+    }
+
+    .contactButton button:hover {
+        font-size: 14px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .image {
+        width: 300px;
+        height: 150px;
+        text-align: end;
+        margin-right: 10px;
+    }
+
+    .image img {
+        height: 100%;
+    }
+
+    .imageContainer:hover {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    .arrowContainer {
+        padding-top: 10px;
+        height: 9vh;
+    }
+
+    .arrowContainer img {
+        height: 70%;
+    }
 }
