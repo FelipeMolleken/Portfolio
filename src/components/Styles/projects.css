@@ -57,3 +57,16 @@
     }
 
 }
+@media screen and (max-width:630px){
+
+    .top div {
+        height: 27vh;
+        width: 14vh;
+    }
+    .bottom div{
+        height: 27vh;
+        width: 14vh;
+    }
+
+
+}

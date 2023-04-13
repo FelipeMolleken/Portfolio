@@ -123,7 +123,7 @@
     .presentation {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 85%;
     }
 
     .presentation img {
@@ -141,11 +141,11 @@
     }
 
     .aboutMeText h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .aboutMeText p {
-        font-size: 10px;
+        font-size: 11px;
         margin-top: 10px;
     }
 

@@ -150,16 +150,19 @@
 
 @media screen and (max-width:630px) {
 
+    #skillsContainer h1 {
+        height: 8vh;
+    }
     .techsSkills h2 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .techsSkills p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .softs p {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .skills1 {
@@ -167,17 +170,17 @@
         align-items: center;
     }
     .charisma {
-        width: 80%;
+        width: 85%;
     }
     
     .dedication {
-        width: 80%
+        width: 85%
     }
     .proactivity{
-        width: 80%
+        width: 85%
     }
     .softs h2 {
-        font-size: 10px;
+        font-size: 11px;
     }
     .skills1 div{
         margin-bottom: 15px;

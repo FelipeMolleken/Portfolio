@@ -62,9 +62,10 @@
 }
 
 .contactButton button {
-    height: 38px;
-    padding: 5px 30px;
+    height: 43px;
     font-size: 20px;
+    width: 100%;
+    margin-right: 5px;
     border: 1px solid var(--purple-color);
     border-radius: 3px;
     color: var(--color-text-button);
@@ -77,7 +78,7 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     color: var(--purple-color);
-    font-size: 21px;
+    font-size: 20px;
     box-shadow: 1px 1px 10px var(--button-shadow);
 }
 
@@ -101,12 +102,14 @@
 
     .contactButton button {
         height: 38px;
-        padding: 5px 30px;
-        font-size: 16px;
+        font-size: 15px;
+        width: 100%;
+        margin-right: 5px;
+    
     }
 
     .contactButton button:hover {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
@@ -121,12 +124,13 @@
 
     .contactButton button {
         height: 38px;
-        padding: 5px 23px;
-        font-size: 13px;
+        font-size: 12px;
+        width: 100%;
+        margin-right: 5px;
     }
 
     .contactButton button:hover {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }
@@ -153,31 +157,37 @@
         height: 30%;
         cursor: pointer;
     }
+
+    .contactButton button {
+        width: 100%;
+        margin-right: 5px;
+    }
 }
 
 @media screen and (max-width:630px) {
     #homeContainer {
         /* height: 55vh; */
         height: auto;
-
         flex-direction: column;
         align-items: center;
     }
 
     .textContainer {
-        width: 88%;
+        width: 95%;
         padding: 0px;
         margin: 0px;
         margin: 30px 0px 0px 0px;
     }
 
     .subTitle {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .contactButton button {
+        width: 100%;
+        margin-right: 5px;
         height: 30px;
-        padding: 3px 18px;
+        /* padding: 3px 18px; */
         font-size: 10px;
     }
 
@@ -194,7 +204,7 @@
     .image {
         width: 300px;
         height: 150px;
-        text-align: end;
+        text-align: center;
         margin-right: 10px;
     }
 
