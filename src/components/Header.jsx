@@ -26,10 +26,17 @@ function Header() {
 
     function scroll(ref) {
         document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
+        if(menuIsActive === true){
+            setMenuIsActive(false)
+        }
     }
     function scrollTop() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+        if(menuIsActive === true){
+            setMenuIsActive(false)
+        }
     }
+
 
     // SWITCH LANGUAGE/////////////////////////////////////////////////////////////
 
@@ -51,11 +58,10 @@ function Header() {
     const menuRef = useRef(null)
 
     function toggleMenu(event) {
-        if (event.type === "TouchStart") event.preventDefault()
         event.currentTarget.setAttribute('aria-expanded', !menuIsActive)
-        setMenuIsActive(!menuIsActive)}
-        
+        setMenuIsActive(!menuIsActive)}   
     ;
+  
 
 
     return (
@@ -74,13 +80,16 @@ function Header() {
                     <li><a onClick={() => scroll('footerContainer')}>{data.headerContact}</a></li>
                 </nav>
                 <div id="buttons">
-                    <label id="switchLabel" onChange={handleCheckboxChange}>
-                        <input type="checkbox" checked={isWhiteMode} />
+                    {/* <label id="switchLabel" onChange={handleCheckboxChange}>
+                        <input type="checkbox" checked={isWhiteMode} /> */}
+                        <label id="switchLabel" >
+                        <input type="checkbox" onChange={handleCheckboxChange} checked={isWhiteMode} />
+
                         <img src={isWhiteMode ? "./moonIcon.png" : "./sunIcon.png"} alt="Checkbox" />
                     </label>
                     <button onClick={handleLanguageChange}><img src={language === 'en' ? "./br.png" : "./eua.png"}></img></button>
 
-                    <button id="btn-mobile" touchStart={toggleMenu} onClick={toggleMenu} aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src={isWhiteMode ? "./hamburguerBlack.png" : "./hamburguerWhite.png"} alt="" /></button>
+                    <button id="btn-mobile" onClick={toggleMenu} aria-label="Open Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><img src={isWhiteMode ? "./hamburguerBlack.png" : "./hamburguerWhite.png"} alt="" /></button>
 
                 </div>
 
