@@ -41,7 +41,7 @@ function Home() {
                 </div>
             </div>
             <div id="aboutMeLink" className="arrowContainer">
-                <a onClick={() => scroll('aboutMeLink')}><img src={isWhiteMode ? "./ArrowDownBlack.png" : "./arrowDown.gif"}></img></a>
+                <a onClick={() => scroll('aboutMeLink')}><img src={isWhiteMode ? "./arrowDownBlack.png" : "./arrowDown.gif"}></img></a>
             </div>
         </div>
     );

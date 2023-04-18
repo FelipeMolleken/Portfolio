@@ -19,7 +19,7 @@
     width: 25vh;
     background-color: rgba(96, 127, 127, 0.611);
     margin: 6px 8px;
-    border-radius: 2px;
+    border-radius: 7px;
 }
 
 .bottom div {
@@ -27,12 +27,18 @@
     width: 25vh;
     background-color: rgba(96, 127, 127, 0.611);
     margin: 6px 8px;
-    border-radius: 2px;
+    border-radius: 7px;
 }
 
 .bottom {
     display: flex;
     justify-content: center;
+}
+.project img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    /* object-fit: cover; */
 }
 
 @media screen and (max-width:1200px) {
@@ -67,6 +73,7 @@
         height: 27vh;
         width: 14vh;
     }
+
 
 
 }

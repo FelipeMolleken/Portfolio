@@ -12,18 +12,31 @@ function Projects() {
             <div className="projectsMenu">
                 <div className="top">
                     <div className="project">
+                        <img src="./portfolioCard.png" alt="" />
                     </div>
                     <div className="project">
+                        <img src="./memoryJs.png" alt="" />
                     </div>
                     <div className="project">
+                        <img src="./todoReact.png" alt="" />
+                    </div>
+                    <div className="project">
+                        <img src="./todoReact2.png" alt="" />
                     </div>
                 </div>
                 <div className="bottom">
                     <div className="project">
+                        <img src="./rocketpay.png" alt="" />
                     </div>
                     <div className="project">
+                        <img src="./memoryReact.png" alt="" />
                     </div>
                     <div className="project">
+                        <img src="./ufc.png" alt="" />
+                    </div>
+                    
+                    <div className="project">
+                        <img src="./cover.png" alt="" />
                     </div>
                 </div>
             </div>
