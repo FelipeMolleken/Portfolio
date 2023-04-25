@@ -14,7 +14,7 @@ function Footer(props) {
     }
 
     return (
-        <div id="footerContainer">
+        <footer id="footerContainer">
             <div id="arrowFooter">
                 <a onClick={() => scrollTop()}><img src={isWhiteMode ? "./arrowUpBlack.png" : "./arrowUpWhite.png"} alt="Checkbox" /><p><b>{data.FooterArrow}</b></p></a>
             </div>
@@ -39,7 +39,7 @@ function Footer(props) {
             <div id="copyright">
                 <p>Copyright © Felipe Gois Molleken · 2023</p>
             </div>
-        </div>
+        </footer>
     );
 }
 
